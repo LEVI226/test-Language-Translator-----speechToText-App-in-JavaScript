@@ -139,8 +139,12 @@ body{
   .text-input textarea{
     height: 200px;
   }
-  .controls .row .icons{
-    display: none;
+  .controls .row .icons {
+    display: none; 
+  }
+
+  .controls .row .icons {
+    display: flex;
   }
   .container button{
     padding: 13px;
