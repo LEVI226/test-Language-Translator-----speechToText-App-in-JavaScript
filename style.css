@@ -125,35 +125,45 @@ body{
   background: #5372F0;
 }
 
-@media (min-width: 768px){
-  .container{
+@media (max-width: 660px) {
+  .container {
     padding: 20px;
   }
-  .wrapper .text-input{
+
+  .wrapper .text-input {
     flex-direction: column;
   }
-  .text-input .to-text{
+
+  .text-input .to-text {
     border-left: 0px;
     border-top: 1px solid #ccc;
   }
-  .text-input textarea{
+
+  .text-input textarea {
     height: 200px;
-  }
-  .controls .row .icons {
-    display: none; 
   }
 
   .controls .row .icons {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .container button{
+
+  .container button {
     padding: 13px;
     font-size: 16px;
   }
-  .controls .row select{
+
+  .controls .row select {
     font-size: 16px;
   }
-  .controls .exchange{
+
+  .controls .exchange {
     font-size: 14px;
+  }
+
+  /* Hide specific icon based on screen size */
+  .controls .row .desktop-icon {
+    display: none;
   }
 }
